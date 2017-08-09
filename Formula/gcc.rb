@@ -114,6 +114,7 @@ class Gcc < Formula
       system "make", "install"
 
       bin.install_symlink bin/"gfortran-#{version_suffix}" => "gfortran"
+      bin.install_symlink bin/"f95" => "gfortran"
     end
 
     # Handle conflicts between GCC formulae and avoid interfering
